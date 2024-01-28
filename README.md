@@ -51,6 +51,22 @@ User:     mshrestha
 Password: hkhj
 Access denied.
 
+3)deluser.py
+The code defines a delete_user function that removes a user entry from the 'passwd.txt' file based on the provided username. It reads all lines from the file, opens the file in write mode to overwrite it with modified content excluding the specified username, and then prints "User Deleted."
+
+In the main block, the script takes user input for the username to be deleted, calls the delete_user function with the specified username, and executes the deletion process. The code allows for the removal of a user from the authentication system stored in the 'passwd.txt' file.
+Output:
+Enter username: mjj
+User Deleted.
+
+4)passwd.py
+The code defines a change_password function that updates the password for a specified username in the 'passwd.txt' file. It reads all lines from the file, and for each line, it checks if the username and current password match. If a match is found, it writes the line with the new password; otherwise, it writes the line unchanged. The main block takes user input for the username, current password, new password, and password confirmation, and if the new password and confirmation match, it calls the change_password function, updating the password in the 'passwd.txt' file and printing "Password changed." Otherwise, it prints an error message indicating that the passwords do not match.
+Output:
+User:             memj
+Current Password: mjklmj
+New Password:     mimi
+Confirm:          mimi
+
 
 
 
