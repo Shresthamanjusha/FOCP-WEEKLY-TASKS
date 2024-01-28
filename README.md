@@ -30,5 +30,31 @@ Average duration of each visit by the correct cat: 26.92 minutes
 Duration of the longest visit by the correct cat: 50 minutes
 Duration of the shortest visit by the correct cat: 5 minutes
 =======================
+Task3
+1)adduser.py
+The code defines a function add_user that takes new user information (username, real name, and password) and appends it to the 'passwd.txt' file in the format "username:real_name:password". In the main block, it obtains user input for a new user, checks if the chosen username already exists by reading existing usernames from the 'passwd.txt' file, and either prints an error message if the username is already in use or adds the new user to the file using the add_user function.
+
+The code ensures the uniqueness of usernames before adding a new user to the 'passwd.txt' file, and it provides feedback to the user regarding the success or failure of the user creation process.
+
+Output:
+Enter new username: mk
+Enter real name: manjusha
+Enter password: meme
+User Created.
+
+2)login.py
+The code defines a login function that checks the provided username and password against entries in the 'passwd.txt' file. It reads each line of the file, splits it into fields using ':' as a delimiter, and compares the username and password. If a match is found, it returns True indicating a successful login; otherwise, it returns False.
+
+In the main block, the script takes user input for login credentials, calls the login function, and prints "Access granted." if the login is successful, or "Access denied." if the login fails. The code provides a basic authentication mechanism by validating user credentials against stored information in the 'passwd.txt' file.
+Output:
+User:     mshrestha
+Password: hkhj
+Access denied.
+
+
+
+
+
+ 
 
 
